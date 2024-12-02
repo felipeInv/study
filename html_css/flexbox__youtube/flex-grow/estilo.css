@@ -1,0 +1,43 @@
+@charset "UTF-8";
+html{
+    background: url('../modelo/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.container > *{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 26px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+.container > *:hover{
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+/*----------------------------*/
+.container{
+    display: flex;
+    border: 2px solid white;
+    width: 800px;
+}
+.container div{
+    margin: 0px;
+    padding: 20px 0px;
+    width: 100px;
+    flex-grow: 1;
+}
+.container div:nth-child(2){
+    flex-grow: 2;
+}
+.container div:nth-child(4){
+    flex-grow: 4;
+}
+.container div:nth-child(1){
+    flex-grow: 3;
+}
+

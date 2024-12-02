@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Título da página</title>
+        <meta name="description" content="descrição objetiva sobre o conteúdo da página">
+        <meta name="author" content="Luiz Felipe Veiga Souza">
+        <meta name="keywords" content="html,css,javascript">
+
+        <style>
+            .container{
+                border: 2px solid black;
+                padding: 16px;
+                width: 300px;
+                margin-bottom: 16px;
+            }
+            .item{
+                background-color: blueviolet;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+            .fit-content .item{
+                width: fit-content;
+            }
+            .min-content .item{
+                width: min-content;
+            }
+            .max-content .item{
+                width: max-content;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container fit-content">
+            <div class="item">lorem</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cupiditate!</div>
+            <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia placeat dignissimos nisi quibusdam cumque iure minus consequatur a excepturi, odio iusto dolorum natus labore libero.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda hic quasi laudantium ipsa eaque, in numquam, asperiores nostrum quo molestiae ullam perspiciatis veniam neque quibusdam culpa temporibus accusantium? Quas nemo rerum consequatur dolor assumenda. Possimus quae voluptatem ea a quia autem, corrupti dolor sequi officia nemo blanditiis quas ipsam, neque recusandae, delectus animi suscipit! Doloribus corporis commodi quas vel odio eligendi. Debitis esse, error saepe aliquid magni asperiores recusandae repellat aspernatur omnis quam impedit expedita!</div>
+        </div>
+
+        <div class="container min-content">
+            <div class="item">lorem</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cupiditate!</div>
+            <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia placeat dignissimos nisi quibusdam cumque iure minus consequatur a excepturi, odio iusto dolorum natus labore libero.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda hic quasi laudantium ipsa eaque, in numquam, asperiores nostrum quo molestiae ullam perspiciatis veniam neque quibusdam culpa temporibus accusantium? Quas nemo rerum consequatur dolor assumenda. Possimus quae voluptatem ea a quia autem, corrupti dolor sequi officia nemo blanditiis quas ipsam, neque recusandae, delectus animi suscipit! Doloribus corporis commodi quas vel odio eligendi. Debitis esse, error saepe aliquid magni asperiores recusandae repellat aspernatur omnis quam impedit expedita!</div>
+        </div>
+
+        <div class="container max-content">
+            <div class="item">lorem</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cupiditate!</div>
+            <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia placeat dignissimos nisi quibusdam cumque iure minus consequatur a excepturi, odio iusto dolorum natus labore libero.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda hic quasi laudantium ipsa eaque, in numquam, asperiores nostrum quo molestiae ullam perspiciatis veniam neque quibusdam culpa temporibus accusantium? Quas nemo rerum consequatur dolor assumenda. Possimus quae voluptatem ea a quia autem, corrupti dolor sequi officia nemo blanditiis quas ipsam, neque recusandae, delectus animi suscipit! Doloribus corporis commodi quas vel odio eligendi. Debitis esse, error saepe aliquid magni asperiores recusandae repellat aspernatur omnis quam impedit expedita!</div>
+        </div>
+    </body>
+</html>

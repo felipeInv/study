@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 60em) {
+    .hero_main{
+        /* padding-top: 6rem; */
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        aspect-ratio: 1198 / 670;
+
+        justify-content: flex-end;
+    }
+    .hero_main > *{
+        margin-bottom: 1rem;
+    }
+}

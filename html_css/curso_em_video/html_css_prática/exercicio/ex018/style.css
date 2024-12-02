@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(20, 20, 20);
+    font-family: sans-serif;
+}
+.divisio{
+    background-color: gray;
+    color: fff;
+    text-align: center;
+}
+.pone{
+    color: rgb(161, 161, 161);
+}
+.ptwo{
+    color: rgb(185, 121, 1);
+}
+.basic{
+    color: green;
+}
+.avanced{
+    color: red;
+}
+#principal{
+    color: #fff;
+}

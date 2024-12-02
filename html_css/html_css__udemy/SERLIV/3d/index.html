@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="p-t-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cena{
+            border: 2px solid #ccc;
+            width: 300px;
+            aspect-ratio: 1;
+            margin: 80px;
+        }
+        .plano{
+            background-color: red;
+        }
+        #cena1{
+            perspective: 400px;
+        }
+        #cena1 .plano{
+            width: 200px;
+            margin: 50px;
+            height: 200px;
+
+            transform: rotateY(25deg);
+        }
+        #cena2 .plano{
+            width: 200px;
+            margin: 50px;
+            height: 200px;
+
+            transform: perspective(400px) rotateY(25deg);
+        }
+
+        #cena3, 
+        #cena4{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        #cena3 .plano,
+        #cena4 .plano{
+            margin: 1rem;
+        }
+        
+        #cena3{
+            perspective: 600px;
+            perspective-origin: 50% 50%;
+        }
+        #cena3 .plano{
+            transform: rotatez(45deg);
+        }
+        #cena4 .plano{
+            transform: perspective(600px) rotateY(45deg);
+            backface-visibility: hidden;
+            transition: 1s;
+        }
+        #cena4 .plano:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cena" id="cena1">
+        <div class="plano">Cena 1</div>
+    </div>
+    <div class="cena" id="cena2">
+        <div class="plano">Cena 1</div>
+    </div>
+    <div class="cena" id="cena3">
+        <div class="plano">Cena 1</div>
+        <div class="plano">Cena 2</div>
+        <div class="plano">Cena 3</div>
+        <div class="plano">Cena 4</div>
+        <div class="plano">Cena 5</div>
+        <div class="plano">Cena 6</div>
+        <div class="plano">Cena 7</div>
+        <div class="plano">Cena 8</div>
+        <div class="plano">Cena 9</div>
+    </div>
+    <div class="cena" id="cena4">
+        <div class="plano">Cena 1</div>
+        <div class="plano">Cena 2</div>
+        <div class="plano">Cena 3</div>
+        <div class="plano">Cena 4</div>
+        <div class="plano">Cena 5</div>
+        <div class="plano">Cena 6</div>
+        <div class="plano">Cena 7</div>
+        <div class="plano">Cena 8</div>
+        <div class="plano">Cena 9</div>
+    </div>
+</body>
+</html>

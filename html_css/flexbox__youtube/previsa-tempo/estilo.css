@@ -1,0 +1,88 @@
+@charset "UTF-8";
+html{
+    background: url('../modelo/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 100vh;
+    padding: 50px;
+}
+.container > *{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 26px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+.container > *:hover{
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+/*----------------------------*/
+
+.weather{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.weather > div{
+    margin: 10px 0px;
+}
+.weather__period{
+    flex: 1;
+    font-size: 2em;
+    text-align: left;
+}
+.weather__icon{
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+}
+.weather__min{
+    font-weight: 700;
+}
+.weather__min::after{
+    content: ' - ';
+}
+@media (min-width: 600px){
+    .weather{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .weather > div{
+        margin: 0px 50px;
+    }
+    .weather__period{
+        font-size: 1.5em;
+        min-width: 50px;
+        text-align: left;
+    }
+    .weather__min{
+        display: block;
+    }
+    .weather__min::after{
+        content: '';
+    }
+}
+@media (min-width: 900px){
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .weather{
+        flex-basis: 100px;
+        flex-direction: column;
+    }
+    .weather > div{
+        margin: 10px 0px;
+    }
+    .weather__period{
+        flex-basis: 100px;
+    }
+}

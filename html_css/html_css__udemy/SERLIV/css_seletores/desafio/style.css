@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+a{
+    display: block;
+    margin: 1em 0px ;
+}
+a[target="_blank"]::after{
+    content: url(imagens/newWindow-icon.png);
+    margin-left: 0.4em;
+}
+a[href$=".pdf"]::before{
+    content: url(imagens/pdf-icon.gif);
+    margin-right: 0.4em;
+}
+li li:nth-child(3){
+    background-color: darkgreen;
+    padding: 0.3em;
+}
+input[type="checkbox"]:checked + label{
+    color: green;
+}
+input[type="checkbox"]:not(:checked) + label{
+    color: red;
+}
+input[type="checkbox"][disabled] + label{
+    color: blue;
+}

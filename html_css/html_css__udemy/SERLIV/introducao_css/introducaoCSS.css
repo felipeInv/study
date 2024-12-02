@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*comentar no CSS*/
+
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+h1{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+h2{
+    font-size: 2em;
+    font-style: italic;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+    background-color: white;
+}
+p{
+    text-indent: 1.5em;
+    font-size: 1.5em;
+    text-align: justify;
+    color: lightgrey;
+    font-variant: small-caps;
+}
+a{
+    font-weight: 900;
+    text-decoration: none;
+    font-variant: normal;
+}
+.destaque{
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+#destaque{
+    text-transform: capitalize;
+    color: rgb(129, 236, 28);
+}

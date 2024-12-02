@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        .chk1{
+            display: none;
+        }
+        .chk1 + label span{
+            display: inline-block;
+            font-size: 12px;
+            width: 1em;
+            height: 1em;
+            border: 1px solid rgb(112, 112, 112);
+            border-radius: 3px;
+        }
+        .chk1:checked + label span{
+            background-color: green;
+            position: relative;
+        }
+        .chk1:checked + label span::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0em;
+            left: 0.25em;
+            right: 0.25em;
+            bottom: 0.25em;
+            border-right: 0.2em solid white;
+            border-bottom: 0.2em solid white;
+            transform: rotate(30deg);
+        }
+
+
+
+
+
+
+        .lbl2 input[type="checkbox"]{
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+        .lbl2 input[type="checkbox"]:focus + span{
+            outline: 0.2em solid black;
+            /* box-sizing: border-box; */
+        }
+        .lbl2 input[type="checkbox"] + span{
+            display: inline-block;
+            font-size: 12px;
+            width: 1em;
+            height: 1em;
+            border: 1px solid rgb(90, 90, 90);
+            border-radius: 2px;
+            position: relative;
+            transition: 0.15s;
+        }
+        .lbl2 input[type="checkbox"]:checked + span{
+            background-color: green;
+        }
+        .lbl2 input[type="checkbox"]:checked + span::before{
+            content: "";
+            display: block;
+            border-bottom: 0.2em solid rgb(255, 255, 255);
+            border-right: 0.2em solid rgb(255, 255, 255);
+            position: absolute;
+            top: 0em;
+            bottom: 0.25em;
+            left: 0.25em;
+            right: 0.25em;
+            transform: rotate(30deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html" checked class="chk1">
+    <label for="html">
+        <span></span>
+        HTML
+    </label>
+    <input type="checkbox" id="css" class="chk1">
+    <label for="css">
+        <span></span>
+        CSS
+    </label>
+    <input type="checkbox" id="js" class="chk1">
+    <label for="js">
+        <span></span>
+        Javascript
+    </label>
+    <hr>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        Javascript
+    </label>
+</body>
+</html>

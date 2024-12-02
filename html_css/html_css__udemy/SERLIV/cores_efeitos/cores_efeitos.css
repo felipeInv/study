@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+:root{
+    --primary-color: #017803;
+    --secondary-color: #eca200;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(0deg, rgb(00,255,00) 0%, red),url(imagens/tile.png);
+    background-attachment: fixed, scroll;
+    background-blend-mode: color, normal;
+
+}
+.cores{
+    width: 80%;
+    border: 8px dashed color-mix(in srgb, var(--primary-color), yellow);
+    margin: 20px auto;
+    padding: 26px;
+}
+.cores p{
+    margin: 0px;
+}
+section{    
+    counter-reset: contador;
+}
+.cores{
+    counter-increment: contador;
+}
+.cores::before{
+    content: "[ " counter(contador) " ]";
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.cores:nth-child(2){
+    background-color: var(--secondary-color);
+    background-clip: border-box;
+}
+.cores:nth-child(3){
+    background-color: var(--secondary-color);
+    background-clip: padding-box;
+}
+.cores:nth-child(4){
+    background-color: var(--secondary-color);
+    background-clip: content-box;
+}
+.cores:nth-child(5){
+    background-color: hsl(130deg, 100%, 60%);
+    transition-duration: 0.18s;
+    box-shadow: 3px 3px 6px hsl(130deg, 100%, 30%) none;
+}
+.cores:nth-child(5):hover{
+    background-color: hsl(130deg, 100%, 30%);
+    color: hsl(130deg, 100%, 100%);
+    box-shadow: 6px 6px 6px hsl(130deg 100% 0% / 0.5) inset;
+}
+.cores:nth-child(6){
+    background-image: linear-gradient(70deg, orange, transparent), linear-gradient(250deg, green, transparent);
+    background-clip: padding-box, content-box;
+}
+.cores:nth-child(7){
+    background-image: radial-gradient(ellipse,var(--primary-color), var(--secondary-color)) ;
+}
+.cores:nth-child(8){
+    background-image: radial-gradient(circle, var(--primary-color), var(--secondary-color)) ;
+}
+.cores:nth-child(8){
+    background-image: radial-gradient(circle at 50% -30%, var(--primary-color),  var(--secondary-color) 30%) ;
+}
+.cores:nth-child(9){
+    background-image: radial-gradient(closest-corner at 20% 20%, var(--primary-color),  var(--secondary-color)) ;
+}
+.cores:nth-child(10){
+    background-image: radial-gradient(farthest-corner at 20% 20%, var(--primary-color),  var(--secondary-color)) ;
+}
+.cores:nth-child(11){
+    background-image: radial-gradient(closest-side at 40% 20%, var(--primary-color),  var(--secondary-color)) ;
+}
+.cores:nth-child(12){
+    background-image: radial-gradient(circle farthest-side at 20% 20%, var(--primary-color),  var(--secondary-color)) ;
+}
+.cores:nth-child(13){
+    background-image: 
+    radial-gradient(circle farthest-side at 20% 20%,red, rgba(0, 0, 255, 0.274)),
+    radial-gradient(circle farthest-corner at 80% 80%,green,transparent);
+}
+.cores:nth-child(14){
+    background-image: conic-gradient(from 45deg, red, green, blue);
+}
+.cores:nth-child(15){
+    background-image: conic-gradient(#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);
+    filter: hue-rotate(0deg);
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.cores:nth-child(15):hover{
+    background-image: conic-gradient(#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);
+    filter: hue-rotate(2turn);
+}
+.cores:nth-child(16){
+    background-image: repeating-linear-gradient(to top left, white 0%, white 5%, black 5%, black 10%);
+}
+.cores:nth-child(17){
+    background-image: repeating-radial-gradient(circle at 20% 20%, white 0%, white 7%, black 7%, black 14%);
+}
+.cores:nth-child(18){
+    background-image: repeating-conic-gradient(#f00 10deg,#ff0 20deg,#0f0 30deg,#0ff 40deg,#00f 50deg,#f0f 60deg,#f00 70deg);
+}
+.cores:nth-child(19){
+    background-image: 
+    repeating-conic-gradient(transparent 0deg, transparent 10deg, #0f0 10deg,#0f0 20deg),
+    repeating-radial-gradient( #000 0%, transparent, black 20%);
+    background-attachment: fixed, scroll;
+}
+.cores:nth-child(20){
+    background-image: 
+    repeating-radial-gradient( #000 0%, transparent, green 20%),
+    repeating-linear-gradient(black, green);
+    background-attachment:  scroll, fixed;
+}
+.cores:nth-child(21){
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8);
+}
+.cores:nth-child(22){
+    filter: drop-shadow(10px 10px 2px rgba(0,0,0,.8));
+}

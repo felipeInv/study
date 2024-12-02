@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-face</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        @font-face{
+            font-family: nadia;
+            src:
+                local("Nadia Serif"), 
+                local("nadia-serif"),
+                url(fonts/nadia/nadia-serif.ttf) format("truetype"), 
+                url(fonts/nadia/nadia-serif.svg) format("svg"), 
+                url(fonts/nadia/nadia-serif.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: rubik;
+            src: 
+            local("Rubik-Medium")
+            url(fonts/rubik/rubik-regular-webfont.woff) format("woff"),
+            url(fonts/rubik/rubik-regular-webfont.woff2) format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1{
+            font-family: rubik ,nadia, Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-family: 'roboto', sans-serif;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-Face</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolor totam voluptates, repellat non cupiditate quibusdam maxime adipisci veniam dolores laborum quidem inventore deserunt voluptatum nihil reprehenderit assumenda nisi? Dicta.</p>
+</body>
+</html>

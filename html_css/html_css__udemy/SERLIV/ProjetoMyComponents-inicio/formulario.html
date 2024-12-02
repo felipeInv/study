@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto My Components</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <a href="#"><img class="perfil_image" src="imagens/perfil.png" alt="Foto do Luiz Felipe"></a>
+            <ul class="navigation_list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <h1 class="title">My Component</h1>
+            <section>
+                <h2>Entre em contato</h2>
+                <div class="row">
+                    <form action="#" class="form">
+                        <div class="row">
+                            <div>
+                                <label for="name">Nome</label>
+                                <input type="text" name="name" id="name" placeholder="nome completo" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required> 
+                            </div>
+                        </div>
+                        <label for="message">Digite sua mensagem</label>
+                        <textarea name="message" id="message" rows="8"></textarea>
+                        <input type="submit" class="btn">
+                    </form>
+                    <address> 
+                        <p><b>Endereço</b>: 1234 Somewhere Rd. Nashv•lle, TN United States<br>
+                            <b>Tel.</b>: +351 21 123 456 <br>
+                            <b>E-mail</b>: contato@aprenser.com</p>
+                    </address>
+                </div>
+            </section>
+            <section>
+                <h2>Quiz</h2>
+                <form action="#" class="form form_quiz">
+                    <label for="language_main">Qual é a sua linguagem favorita?</label>
+                    <select name="language_main" id="language_main">
+                        <option value="">Selecione</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="php">PHP</option>
+                    </select>
+                    <label>Baixa prioridade
+                        <input type="radio" name="priority" id="low_priority" value="low_priority">
+                    </label>
+                    <label>Média prioridade
+                        <input type="radio" name="priority" id="middle_priority" value="middle_priority">
+                    </label>
+                    <label>Alta prioridade
+                        <input type="radio" name="priority" id="high_priority" value="high_priority">
+                    </label>
+                    <label for="send_copy">
+                        <input type="checkbox" name="send_copy" id="send_copy" value="true">
+                        Envie-me uma cópia
+                    </label>
+                    <label for="check_human">
+                        <input type="checkbox" name="check_human" id="check_human" value="true">
+                        Sou um humano
+                    </label>
+                    <div class="row">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" class="btn btn_stroke">
+                    </div>
+                </form>
+            </section>
+    </main>
+</body>
+</html>

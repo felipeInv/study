@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.wrapper *{
+    background-color: rgb(0, 184, 0);
+}
+
+.wrapper *:nth-child(even){
+    background-color: rgb(0, 85, 0);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: [site-start] 1fr[content-start] 1fr 1fr[ads-start]1fr[site-end];
+    grid-template-rows: [site-start] 1fr[contentAds-start] repeat(2,1fr)[contentAds-end] 1fr[site-end];
+    gap: .5rem;
+    min-height: 100vh;
+}
+header,footer{
+    grid-column: site;
+}
+main{
+    grid-column: site-start/ads-start;
+    grid-row: contentAds;
+}
+aside{
+    grid-column: ads/site;
+    grid-row: contentAds;
+}
+footer{
+    grid-row: contentAds-end/site-end;
+}
+
+
+

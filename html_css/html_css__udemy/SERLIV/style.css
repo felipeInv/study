@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;;
+}
+
+:root{
+    --primary: #FED001;
+    --neutral-dark: #2a2a2a;
+}
+
+html, body{
+    font-size: 62.5%;
+}
+
+
+/*******************************/
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.limitar_centralizar{
+    max-width: 1440px;
+    margin: 44px auto;
+}
+
+.background_header{
+    background-color: var(--neutral-dark);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    /* width: 100%; */
+}
+
+.background_header .header_main{
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 64px;
+}
+.header_main  .navigation{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 12px;
+}
+.header_main .navigation li a{
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    transition-duration: .2s;
+    font-size: 2.5em;
+}
+.header_main .navigation li a:hover{
+    background-color: var(--primary);
+    color: var(--neutral-dark);
+}
+
+/****************************/
+.background_hero{
+    padding-top: 64px;
+    background:linear-gradient(0deg, var(--primary), #ffffff);
+}
+#hero{
+    display: flex;
+    justify-content: space-around;
+}
+#hero img{
+    width: 40%;
+}
+#hero .content h1{
+    font-size: 7rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+#hero .content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    gap: 24px;
+    padding-left: 32px;
+}
+.button{
+    padding: 12px 32px;
+    background-color: var(--primary);
+    color: var(--neutral-dark);
+    border-radius: 6px;
+    font-size: 2rem;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.button:hover{
+    background-color: var(--neutral-dark);
+    color: var(--primary);
+}
+
+#principais_cursos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.subtitulo{
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px;
+}
+#principais_cursos .cursos{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 8rem;
+}
+#principais_cursos .cursos .curso{
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 32px;
+    transition-duration: .4s;
+}
+#principais_cursos .cursos .curso:hover{
+    flex: 1.2;
+    cursor: pointer;
+}
+#principais_cursos .cursos .curso img{
+    width: 100%;
+}
+#principais_cursos .cursos .curso h3{
+    font-size: 2rem;
+    margin: 12px;
+
+}
+#principais_cursos .cursos .curso p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 0px 16px;
+    margin: 0px auto 24px;
+}
+
+.background_nossa_escola{
+    background-color: #003464;
+}
+
+#nossa_escola{
+    display: flex;
+    color: white;
+    gap: 3.2rem;
+    padding: 2rem 8rem 0rem;
+}
+#nossa_escola img{
+    width: 50%;
+}
+
+#nossa_escola .content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 6.4rem;
+}
+
+#nossa_escola .content h2{
+    font-size: 4rem;
+}
+#nossa_escola .content p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+#contatos{
+    max-width: 1024px;
+}
+address{
+    margin: 24px 0px;
+    font-size: 1.6rem;
+    text-align: right;
+    font-style: normal;
+}
+/****************************/
+
+.footer-main{
+    margin-top: 32px;
+    padding: 16px;
+    background-color: var(--neutral-dark);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+.footer-main a{
+    color: var(--primary);
+    text-decoration: none;
+}
+.footer-main a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+

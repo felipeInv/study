@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 70em) {
+    .hero_main{
+        /* padding: 12rem 0px 8rem 0px; */
+        background-image: linear-gradient(transparent, var(--color-primary)),url(../images/bg_topo_1600x1374.jpg);
+        background-blend-mode: luminosity;
+
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+        max-height: 80vh;
+        width: 100%;
+    }
+    .hero_main__icon{
+        transform: scale(1.3);
+    }
+    .hero_main .hero_main__title, .hero_main p{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    /***********************************************/
+    .middle_content .row{
+        gap: var(--space-elements-sm);
+    }
+    .col_xl_3{
+        width: calc(25% - var(--space-elements-sm));
+    }
+
+    /**********************************************************/
+    .col_xl_6{
+        width: calc(50% - var(--space-elements-sm));
+    }
+    /* .main_content__article__container__image{
+        width: 180%;
+    } */
+}

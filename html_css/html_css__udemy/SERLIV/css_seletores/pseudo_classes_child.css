@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+p:first-child{
+    color: red;
+}
+p:last-child{
+    color: green;
+}
+div :nth-child(2){
+    background-color: blue;
+}
+p:first-of-type{
+    background-color: green;
+}
+p:nth-of-type(3){
+    background-color: purple;
+}
+p:nth-of-type(3n -2){
+    text-align: right;
+}
+p:last-of-type{
+    background-color: orange;
+}
+li:nth-child(even){
+    background-color: rgb(138, 138, 138);
+}
+li:nth-child(3n+1){
+    color: green;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        input[type="checkbox"]{
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            overflow: hidden;
+            outline: none;
+        }
+        input[type="checkbox"] + span{
+            font-size: 16px;
+            display: inline-block;
+            width: 2em;
+            height: 1em;
+            background-color: #cfd8dc;
+            border-radius: 0.5em;
+            overflow: hidden;
+            position: relative;
+        }
+        input[type="checkbox"] + span::before{
+            content: "";
+            display: inline-block;
+            height: 1em;
+            width: 2em;
+            background-color: green;
+            transform: translateX(-100%);
+            transition-duration: 0.5s;
+        }
+        input[type="checkbox"]:checked + span::before{
+            transform: translateX(0%);
+        }
+        input[type="checkbox"] + span::after{
+            content: "";
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            background-color: rgb(180, 180, 180);
+            border-radius: 0.5em;
+            position: absolute;
+            top: 0px;
+            transform: translateX(-2em);
+            transition-property: transform;
+            transition-duration: .5s;
+        }
+        input[type="checkbox"]:checked + span::after{
+            transform: translateX(-1em);
+        }
+        input[type="checkbox"]:focus + span{
+            outline: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <label for="html">
+        <input type="checkbox" id="html">
+        <span></span>
+        HTML
+    </label>
+    <label for="css">
+        <input type="checkbox" id="css">
+        <span></span>
+        CSS
+    </label>
+    <label for="js">
+        <input type="checkbox" id="js">
+        <span></span>
+        Javascript
+    </label>
+</body>
+</html>

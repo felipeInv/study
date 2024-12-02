@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.card_wrapper{
+    container: cardWrapper / inline-size;
+}
+.main{
+    container-type: inline-size;
+    container-name: principal;    
+}
+
+@container cardWrapper (min-width: 35em){
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
+    .card_img{
+        min-width: 30%;
+    }
+    .card_img img{
+        max-height: initial;
+        height: 100%;
+    }
+    
+}
+@media screen and (min-width: 60em){
+    .card_container{
+        flex-flow: row wrap;
+    }
+    .card_wrapper{
+        flex-basis: calc(33% - 3rem);
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+}

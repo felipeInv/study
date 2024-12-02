@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.main_content__article{
+    container-type: inline-size;
+    container-name: content;
+}
+
+
+@container content (min-width: 473px) {
+    .main_content__article__container{
+        flex-direction: row;
+    }
+    .main_content__article__container__image{
+        flex: 0 0 40%;
+    }
+    .main_content__content{
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    border: 2px solid green;
+}
+p{
+    width: 50%;
+    background-color: #ccc;
+}
+a{
+    background-color: lightgreen;
+}
+strong{
+    display: block;
+    padding: 25px;
+    background-color: goldenrod;
+}
+em{
+    display: inline-block;
+    padding: 10px;
+    background-color: darkgray;
+}
+i{
+    display: inline-block;
+    width: 40%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: cadetblue;
+    text-align: center;
+}
+b{
+    visibility: hidden;
+}

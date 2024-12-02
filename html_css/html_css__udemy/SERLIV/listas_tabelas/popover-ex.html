@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+    <style>
+        main{
+            width: 35vw;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        button{
+            background-color: rgb(0, 126, 0);
+            padding: 0.6rem 1rem;
+            border-radius: 4px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #help:popover-open{
+            padding: 1rem;
+            background-color: rgb(0, 126, 0);
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px; 
+            inset: unset;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #help::backdrop{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="row">
+                <h1>Perfil de Felipe Veiga</h1>
+                <button popovertarget="help">Ajuda</button>
+                <div id="help" popover>O nome completo do usuário. Ele pode ser alterado nas configurações de perfil.</div>
+            </div>
+            <p><strong>Nome:</strong>Luiz Felipe Veiga Souza</p>
+        </section>
+        <hr>
+        <section>
+            <h1>Informações de Contato</h1>
+            <p><strong>Email:</strong>felipedesigncont@gmail.com</p>
+        </section>
+    </main>
+</body>
+</html>

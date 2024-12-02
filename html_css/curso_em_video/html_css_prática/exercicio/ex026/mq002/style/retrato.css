@@ -1,0 +1,5 @@
+@charset "UTF-8";
+/*Retrato (portrait)*/
+body{
+    background: url('../img/cev-portrait.jpg');
+}

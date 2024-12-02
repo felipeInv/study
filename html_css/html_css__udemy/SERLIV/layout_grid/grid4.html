@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .gridContainer{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #ccc;
+        }
+        .gridItem{
+            background-color: orange;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .gridContainer{
+            display: grid;
+            gap: 1rem;
+            
+            grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+            grid-template-rows: [header-start] 75px [header-end nav-start] 50px [nav-end main-start] 1fr [main-end footer-start] 50px [footer-end];
+        }
+        .header{
+            background-color: blue;
+            /* grid-column: 1 / -1; */
+            /* grid-column-start: col1-start; */
+            /* grid-column-end: col3-end; */
+            grid-column: col1-start / col3-end;
+            grid-row: header;
+        }
+        .footer{
+            /* grid-column-start: col1-start; */
+            /* grid-column-end: col3-end; */
+            grid-column: col1-start / col3-end;
+            grid-row: footer;
+        }
+        .nav{
+            grid-column: col1-start / col2-end;
+            grid-row: nav;
+        }
+        .aside{
+            grid-column: col3-start / col3-end;
+            grid-row: nav-start / main-end;
+        }
+        .main{
+            grid-column: col1-start / col2-end;
+            grid-row: main;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <header class="header gridItem">Header</header>
+        <nav class="nav gridItem">nav</nav>
+        <aside class="aside gridItem">aside</aside>
+        <main class="main gridItem">main</main>
+        <footer class="footer gridItem">footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: darkolivegreen;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container > div:nth-child(odd){
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+}
+.container > div:nth-child(even){
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************/
+
+.control{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divDentro{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.divDentro div{
+    flex: 1;
+    background-color: white;
+    border: 2px solid black;
+    padding: 7.7vw;
+    text-align: center;
+}

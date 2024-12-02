@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de Medida</title>
+    <style>
+        html{
+            /* font-size: 32px; */
+        }
+        body{
+            /* font-size: 16px; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2{
+            font-weight: lighter;
+        }
+        div{
+            outline: 2px solid red;
+            min-height: 80px;
+        }
+        div:nth-of-type(1){
+            /* background-color: yellow; */
+            font-size: 16px;
+            padding: 16px;
+        }
+        div:nth-of-type(1) b{
+            font-size: 24px;
+        }
+        div:nth-of-type(2){
+            background-color: yellow;
+            font-size: 1em;
+            padding: 1em;
+        }
+        div:nth-of-type(2) b{
+            font-size: 1.5em;
+        }
+        div:nth-of-type(3){
+            background-color: yellow;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+        div:nth-of-type(3) b{
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width: 53.75em){
+            body{
+                background-color: rgb(109, 109, 109);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidae de medidas em projetos responsivos</h1>
+    <h2>pixels</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, alias.</p>
+        <p>Lorem, ipsum dolor sit <b>amet consectet</b> adipisicing elit. Et minima deleniti iure quia corporis? Excepturi id enim ipsam quas expedita.</p>
+    </div>
+    <h2>em</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, alias.</p>
+        <p>Lorem, ipsum <b>dolor sit</b> amet consectetur adipisicing elit. Et minima deleniti iure quia corporis? Excepturi id enim ipsam quas expedita.</p>
+    </div>
+    <h2>rem</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, alias.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur <b>dipisicing elit</b>. Et minima deleniti iure quia corporis? Excepturi id enim ipsam quas expedita.</p>
+    </div>
+</body>
+</html>

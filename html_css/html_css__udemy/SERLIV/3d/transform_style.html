@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="p-t-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cena{
+            border: 2px solid #ccc;
+            width: 300px;
+            aspect-ratio: 1;
+            margin: 60px
+        }
+        .plano{
+            background-color: rgb(0 0 0 /0.3);
+            width: 200px;
+            aspect-ratio: 1;
+        }
+        #cena1{
+            perspective: 500px;
+        }
+        .cena1a{
+            transform: rotateY(45deg) translateX(50px);
+            transform-style: preserve-3d;
+        }
+        .cena1b{
+            transform: rotateX(25deg) translateX(50px) scale3d(1, 1, 5);
+        }
+    </style>
+</head>
+<body>
+    <div class="cena" id="cena1">
+        <div class="cena1a plano">
+            <div class="cena1b plano">Cena 1 B</div>
+        </div>
+    </div>
+</body>
+</html>

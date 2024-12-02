@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accent Color</title>
+    <style>
+        input, progress{
+            accent-color: rgb(34, 196, 2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Accent Color</h1>
+    <h2>Range</h2>
+    <label for="volume">Volume</label>
+    <input type="range" id="volume" name="volume" min="0" max="11"/>
+
+    <h2>Progress</h2>
+    <label>Porcentagem da tarefa
+        <progress max="100" value="70">70%</progress>
+    </label>
+    <progress></progress>
+
+    <h2>checkbox</h2>
+    <label>
+        <input type="checkbox" name="interesse" value="html">HTML
+    </label>
+
+    <label>
+        <input type="checkbox" name="interesse" value="css">CSS
+    </label>
+
+    <h2>Radio</h2>
+    Possui atividade extra?
+    <label>
+        <input type="radio" name="atvExtra" value="s">
+        Sim
+    </label>
+    <label>
+        <input type="radio" name="atvExtra" value="n">
+        Não
+    </label>
+</body>
+</html>

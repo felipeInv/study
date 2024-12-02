@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaQueries.css" media="all">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio voluptate corrupti culpa ipsam placeat quis id esse minima, iure veritatis ea porro! Asperiores unde minima soluta error amet id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo quo delectus similique iure, repudiandae dicta labore at, hic nam suscipit deserunt quis blanditiis earum iusto, molestiae rem. Commodi, alias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio voluptate corrupti culpa ipsam placeat quis id esse minima, iure veritatis ea porro! Asperiores unde minima soluta error amet id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo quo delectus similique iure, repudiandae dicta labore at, hic nam suscipit deserunt quis blanditiis earum iusto, molestiae rem. Commodi, alias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio voluptate corrupti culpa ipsam placeat quis id esse minima, iure veritatis ea porro! Asperiores unde minima soluta error amet id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo quo delectus similique iure, repudiandae dicta labore at, hic nam suscipit deserunt quis blanditiis earum iusto, molestiae rem. Commodi, alias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio voluptate corrupti culpa ipsam placeat quis id esse minima, iure veritatis ea porro! Asperiores unde minima soluta error amet id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo quo delectus similique iure, repudiandae dicta labore at, hic nam suscipit deserunt quis blanditiis earum iusto, molestiae rem. Commodi, alias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio voluptate corrupti culpa ipsam placeat quis id esse minima, iure veritatis ea porro! Asperiores unde minima soluta error amet id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo quo delectus similique iure, repudiandae dicta labore at, hic nam suscipit deserunt quis blanditiis earum iusto, molestiae rem. Commodi, alias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio voluptate corrupti culpa ipsam placeat quis id esse minima, iure veritatis ea porro! Asperiores unde minima soluta error amet id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo quo delectus similique iure, repudiandae dicta labore at, hic nam suscipit deserunt quis blanditiis earum iusto, molestiae rem. Commodi, alias.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'none'){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 769){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

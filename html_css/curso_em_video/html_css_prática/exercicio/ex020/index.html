@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subclasse</title>
+    <style>
+        div > h2{
+            display: none;
+        }
+        div:hover > h2{
+            display: block;
+        }
+        a{
+            color: rgb(0, 182, 0);
+            text-decoration: none;
+            font-weight: normal;
+        }
+        a:visited{
+            color: darkgreen;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: aqua;
+        }
+        a::after{
+            content: ' [Link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de hover</h1>
+    <div>
+        Menu
+        <ul>
+            <li>
+                <h2><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank">início</a></h2>
+            </li>
+            <li>
+                <h2><a href="https://www.youtube.com/watch?v=Ff6oz-JApV4&t=159s" target="_blank">logout</a></h2>
+            </li>
+            <li>
+                <h2><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">exit</a></h2>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

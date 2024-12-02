@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+    font-family: sans-serif;
+}
+header{
+    background-image: linear-gradient(to bottom,#73ec73,#1e6b22);
+    padding: 10px;
+    padding-bottom: 1px;
+}
+header > h1,p{
+    color: #fff;
+    text-align: center;
+}
+header > nav > ul > li {
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+}
+header > nav > ul {
+    margin-bottom: 8px;
+    padding: 0px;
+}
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* Acaba aqui o Header*/
+footer{
+    background-color: #1e6b22;
+    text-align: center;
+    color: white;
+}
+footer > span{
+    font-weight: 800;
+}
+/* Acaba aqui o Footer*/

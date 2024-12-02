@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades de Medidas</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        h1{
+            font-size: 2em;
+        }
+        b{
+            color: red;
+            font-size: 1.5em;/*1em do elemento pai*/
+        }
+        i{
+            color: blue;
+            font-size: 1rem; /*em do elemento raiz (html)*/
+        }
+        p{
+            font-size: 2em;
+            width: 15em;
+            background-color: lightgray;
+        }
+        .porcentagem{
+            width: 50%;
+            height: 200px;
+            background-color: darkgray;
+        }
+        .porcentagem p{
+            font-size: 2em;
+            background-color: green;
+            padding-top: 20%;
+            width: 50%;
+        }
+        .padding_em{
+            background-color: orange;
+            }
+        .padding_em p{
+                background-color: transparent;
+                margin: 0px;
+                font-size: 2rem;
+                padding: 1em;
+        }
+        .viewport_container{
+            font-size: 3rem;
+            width: 90vw;
+            height: auto;
+        }
+        .viewport{
+            width: 90vw;
+            height: 90vh;
+            background-color: rgba(0, 0, 255, 0.651);
+        }
+        .em{
+            width: 20em;
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+        .ch{
+            width: 20em;
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades de Medidas</h1>
+    <p>Lorem, ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Quisquam, enim! Nesciunt minus recusandae eos facilis dignissimos! Distinctio <i>iste corrupti magni </i>laudantium id omnis iure maxime tempore inventore, ducimus iusto neque.</p>
+    <div class="porcentagem">
+        <p>Unidade de medida em porcentagem %</p>
+    </div>
+    <div class="padding_em">
+        <p>padding com EM</p>
+    </div>
+    <div class="porcentagem viewport_container">
+        <div class="viewport">
+            viewport
+        </div>
+    </div>
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptas nulla dolores dicta omnis consequatur rerum? Nemo, dolor quis? Harum.
+    </div>
+    <div class="ch">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur dignissimos iure ducimus sit saepe id itaque, voluptas accusantium qui.
+    </div>
+</body>
+</html>

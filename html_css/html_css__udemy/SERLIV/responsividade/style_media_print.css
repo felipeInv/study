@@ -1,0 +1,9 @@
+.only_print{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+a::after{
+    content: "(" attr(href) ") - (" attr(title)")";
+    display: inline-block;
+    margin-left: .5rem;
+}

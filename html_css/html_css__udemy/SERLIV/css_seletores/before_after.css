@@ -1,0 +1,36 @@
+@charset "UTF-8";
+p::before{
+    content: "Antes >>>";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1.2rem;
+}
+p::after{
+    content: "<<< Depois";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 1.2rem;
+}
+div{
+    border: 3px solid black;
+    padding: 1em;
+    position: relative;
+}
+p{
+    margin: 0px;
+}
+div::after{
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    display: block;
+    position: absolute;
+    right: 0.4em;
+    bottom: 0.4em;
+}
+div::before{
+    content: url(https://placehold.co/64x64/005500/ffffff);
+    float: left;
+    margin-right: 0.8em;
+}

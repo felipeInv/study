@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div{
+            border: 1px solid darkgray;
+            width: 300px;
+            margin: 0.5em auto;
+        }
+        p{
+            width: 100px;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+        .div1 p.destaque{
+            transform: translate(50%);
+        }
+        .div2 p.destaque{
+            position: relative;
+            left: 50%;
+        }
+        .div3 p.destaque{
+            transform: rotate(45deg);
+        }
+        .div4 p.destaque{
+            transform: scale(1.2, 1.2);
+        }
+        .div5 p.destaque{
+            transform: skew(15deg, 15deg);
+        }
+        .div6 p.destaque{
+            transform: translate(100px) rotate(80deg);
+            transform-origin: right bottom;
+        }
+        .div7 p.destaque{
+            transform: rotate(40deg) translate(100px) ;
+            transform-origin: left top;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="div7">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p class="destaque">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+    </div>
+</body>
+</html>

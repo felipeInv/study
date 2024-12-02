@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de fundo</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: url("mapa01.png");
+            background-repeat: repeat-x;
+            background-position: center center;
+            background-attachment: fixed;
+               }
+        .quadrado{
+            display: inline-block;
+            width: 200px;
+            margin: 5px;
+            height: 200px;
+            background-color: lightgray;
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        div#q1{
+            background-color: green;
+        }
+        #q2{
+            background: linear-gradient(to right, #00ff00, #005500);
+        }
+        #q3{
+            background-image: url("XyXFo8YcZqhhG7DoQMJ3h8fic6VX12pl.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.wrapper *{
+    background-color: rgb(0, 184, 0);
+}
+
+.wrapper *:nth-child(even){
+    background-color: rgb(0, 85, 0);
+}
+@media(min-width: 600px){
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100px);
+        grid-auto-rows: 200px;
+        gap: 1rem;
+        grid-template-areas:
+        "header header header header"
+        "main main main        aside" 
+        "main main main        aside" 
+        "footer footer footer footer";
+    }
+    
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+   
+}
