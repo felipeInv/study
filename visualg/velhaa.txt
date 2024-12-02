@@ -1,0 +1,5 @@
+mostra a velha)
+pergunta qual vai jogar  )
+ler                      )
+compara para vê se a posição é válida (senão- avisa e volta ao inicio)
+compara para vê se terminou a velha (senão- muda jogador)

@@ -1,0 +1,5 @@
+arredondar o projeto, faz do zero e deixa bem completinho (joguinho de chute)
+aparecer o número de chutes
+o zero não ser opção de chute
+no pior caso, quantas tentativa precisa para acertar o número
+

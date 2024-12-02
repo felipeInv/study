@@ -1,0 +1,10 @@
+Var- escopo global
+	- Na função ele é global apenas na função.
+	- Pode ser declarada e atribuída várias vezes.
+
+let- escopo local
+	- Até mesmo dentro do bloco ele pode não ser acessado em algumas situações.
+	- Pode ser atribuída várias vezes porém declarada só uma.
+
+const - Escopo local
+	- Só pode ser atribuída e declarada uma vez.

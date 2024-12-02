@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primary: rgb(92, 190, 92); 
+    --color-primary-dark: color-mix(in srgb, var(--color-primary), black 60%); 
+    --color-primary-veryDark: color-mix(in srgb, var(--color-primary), black 80%); 
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-primary);
+    font-size: 1.3rem;
+    line-height: 1.5em;
+
+}
+
+.container{
+    max-width: 33rem;
+    padding: 2rem;
+    margin: 4rem auto;
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.493);
+}
+
+input,
+label,
+button{
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    display: block;
+    width: 100%;
+    margin: 0.2rem 0px;
+}
+
+button{
+    background-color: var(--color-primary);
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin-top: 1.4rem;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+
+    transition-duration: 0.13s;
+}
+
+button:hover{
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+button:active{
+    background-color: var(--color-primary-veryDark);
+}
+
+input{
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: 1rem;
+
+    margin-bottom: 0.5rem;
+}
+
+table{
+    width: 100%;
+}
+table thead{
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+input[type="text"]{
+    border-width: 1px;
+    padding: 1.4rem 1rem;
+}
+#inputs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+#inputs button{
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: 4px;
+    /* cursor: pointer; */
+}
+#inputs button:hover{
+    background-color: color-mix(in srgb, rgb(180, 180, 180), black 20%);
+}
+#inputs .btn-eq{
+    background-color: var(--color-primary);
+}

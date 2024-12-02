@@ -1,0 +1,11 @@
+mostra tabela
+pergunta
+verifica se pode
+senao então volta ao ínicio
+substitui a tabela
+verifica se acabou   |  senao então muda o símbolo
+
+
+acabar o jogo o quando der velha
+avisar quando a jogada foi inválida
+

@@ -1,0 +1,13 @@
+o que ele vai fazer:
+
+	Celsius para Fahrenheit (
+	Celsius para kelvin
+	Fahrenheit para Kelvin
+	Fahrenheit para Celsius
+	Kelvin para Celsius
+	Kevin para faherenheit
+
+o que precisa saber: 
+
+	qual conversão ele quer fazer
+	o valor da primeira temperatura do que ele quer

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primary: rgb(92, 190, 92); 
+    --color-primary-dark: color-mix(in srgb, var(--color-primary), black 60%); 
+    --color-primary-veryDark: color-mix(in srgb, var(--color-primary), black 80%); 
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-primary);
+    font-size: 1.3rem;
+    line-height: 1.5em;
+
+}
+
+.container{
+    max-width: 45rem;
+    padding: 2rem;
+    margin: 4rem auto;
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.493);
+}
+
+form input,
+form label,
+form button{
+    padding: 0.2rem;
+    display: block;
+    width: 100%;
+    margin: 0.2rem 0px;
+}
+
+form button{
+    background-color: var(--color-primary);
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin-top: 1.4rem;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+
+    transition-duration: 0.13s;
+}
+
+form button:hover{
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+form button:active{
+    background-color: var(--color-primary-veryDark);
+}
+
+form input{
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: 1rem;
+
+    margin-bottom: 0.5rem;
+}
+
+table{
+    width: 100%;
+}
+table thead{
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#timer{
+    font-size: 3.4rem;
+    margin: 2rem 0px;
+}
+.pausado{
+    color: darkgrey;
+}
+button{
+    font-size: 1rem;
+}

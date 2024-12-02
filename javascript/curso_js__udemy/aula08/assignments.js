@@ -1,0 +1,11 @@
+console.clear();
+const nome = "Felipe";
+const sobrenome = "Veiga";
+const idade = 17;
+const peso = 60;
+const alturaEmM = 1.86;
+let indiceMassaCorporal = peso/(alturaEmM^2);
+let anoNascimento = 2024-idade;
+console.log(nome,sobrenome,"tem",idade,"anos","pesa",peso,"Kg,");
+console.log('Tem ' + alturaEmM + ' de altura e seu IMC é ' + indiceMassaCorporal+'.');
+console.log(`Felipe nasceu em ${anoNascimento}.`);

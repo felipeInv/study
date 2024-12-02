@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <section class="container">
+        <article>
+            <h1>Tabela IMC</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>IMC</td>
+                        <td>Resultado</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menos do que 18,5</td>
+                        <td>Abaixo do Peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,99</td>
+                        <td>Peso Normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29,99</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34,99</td>
+                        <td>Obesidade grau 1</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39,99</td>
+                        <td>Obesidade grau 2</td>
+                    </tr>
+                    <tr>
+                        <td>Mais que 40</td>
+                        <td>Obesidade grau 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <h1>Calculo do seu IMC</h1>
+            <form id="form" method="post">
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" name="peso" autofocus>
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" name="altura">
+
+                <button>Calcular</button>
+            </form>
+        </article>
+        
+        <output name="result" id="result"></output>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
