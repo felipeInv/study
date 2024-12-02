@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>017</title>
+    <style>
+        
+        div{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: lightblue;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur ea dolorem sapiente laudantium explicabo sunt quidem a sit sint ipsam ipsa provident repellendus, porro nobis minus nemo unde inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veritatis quia similique nostrum? Laborum, a fuga? Fugit repellendus consectetur odio nobis suscipit culpa. Harum perferendis, cupiditate quidem eveniet hic cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quod ex! Fuga voluptate pariatur quo aspernatur sed aut eaque expedita, quod magnam, saepe eum culpa ipsam beatae error. Eaque, quas
+    </div>
+    <p id="propriedades"></p>
+    <button onclick="buscar_propriedades()">Exucutar</button>
+
+    <script>
+        function buscar_propriedades(){
+            let divisao = document.querySelector('div');
+            let paragrafo = document.querySelector('#propriedades');
+
+            let resultados = '';
+            resultados += "offsetLeft = " + divisao.offsetLeft + " ";
+            resultados += "offsetTop = " + divisao.offsetTop + " ";
+            resultados += "offsetWidth = " + divisao.offsetWidth + " ";
+            resultados += "offsetHeight = " + divisao.offsetHeight + " ";
+            
+            resultados += "scrollTop = " + divisao.scrollTop + " ";
+            resultados += "scrollHeight = " + divisao.scrollHeight + " ";
+
+            paragrafo.textContent = resultados;
+
+        }
+    </script>
+</body>
+</html>

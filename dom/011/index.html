@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        p{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Dentro da div
+    </div>
+
+    <script>
+
+        let divisao = document.querySelector('.container');
+        /*
+        // adicionar texto antes da div
+        divisao.before('AAA');
+
+        //dentro da div e antes do conteúdo
+        divisao.prepend('BBB');
+
+        //dentro da div e depois do conteúdo
+        divisao.append('CCC');
+
+        //adicionar texto depois da div
+        divisao.after('DDD');*/
+
+        let p1 = document.createElement('p');
+        let p2 = document.createElement('p');
+        let p3 = document.createElement('p');
+        let p4 = document.createElement('p');
+        p1.innerText = 'Parágrafo 1';
+        p2.innerText = 'Parágrafo 2';
+        p3.innerText = 'Parágrafo 3';
+        p4.innerText = 'Parágrafo 4';
+
+        //colocar parágrafo antes da div
+        divisao.before(p1);
+        divisao.prepend(p2);
+        divisao.append(p3);
+        divisao.after(p4);
+    </script>
+</body>
+</html>

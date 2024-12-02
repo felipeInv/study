@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>009</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="noticia">
+        <h1>Titulo da notícias</h1>
+        <h3 id="sumario">Sumário da notícia</h3>
+        <img src="imt/img1.jpg" alt="imagem noticia">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum exercitationem dolore deserunt voluptate voluptatem autem incidunt neque officiis, in unde, minus quibusdam ullam aperiam itaque ab voluptas voluptatum dignissimos saepe?</p>
+    </main>
+
+    <script>
+
+        let elemento = document.querySelector('#sumario');
+
+        //hasAttribute (verifica se tem o atributo)
+        /*if(elemento.hasAttribute('id')){
+            console.log("Sim")
+        }*/
+
+        //getAttribute (mostra o que tem no atributo)
+        //console.log(elemento.getAttribute('id'));
+
+        //setAttribute (coloca um atributo('atributo', 'valor'))
+        //elemento.setAttribute('title', 'titulo da noticia');
+
+        //removeAttribute (remove o atributo)
+         let imagem = document.querySelector('img');
+        // imagem.removeAttribute('src')
+
+        //attributes (retorna uma coleção com os atributos)
+        console.log(imagem.attributes)
+
+    </script>
+</body>
+</html>

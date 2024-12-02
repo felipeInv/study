@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>027</title>
+</head>
+<body>
+    <input type="text" name="caixa_text" id="caixa_texto">
+
+    <script>
+        let elemento = document.querySelector('#caixa_texto')
+
+        elemento.addEventListener('keydown', (evento) =>{
+            if(evento.code == 'ArrowUp'){
+                console.log('pressionou a tecla de cursor para cima')
+            }
+            console.log(evento.code)
+        })
+
+        function teste(){
+            console.log('teste');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>031</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        form{
+            width: 25vw;
+            border: 2px solid gray;
+            padding: 40px;
+            display: flex;
+
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        label, input, button{
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+        <form action="#" method="post" id="formulario">
+            <div>
+                <label for="usuario">Usuário</label> <br>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+            <div>
+                <label for="senha">Senha</label> <br>
+                <input type="password" name="senha" id="senha">
+            </div>
+    </div>
+    <div>
+         <input type="submit" value="Entrar">
+        <!-- <button type="button">Entrar</button> -->
+        <!-- <input type="image" src="../007/imt/img1.jpg"> -->
+    </div>
+
+    <script>
+        let formulario = document.querySelector('#formulario');
+
+        formulario.addEventListener('submit', (evento) =>{
+            console.log('teste')
+
+            //tirar a 
+            evento.preventDefault();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>020</title>
+
+    <style>
+            h1{
+                margin: 50px auto;
+            }
+            .centrar{
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="centrar">
+        <h1>Texto original do HTMl</h1>
+        <button onclick="alterar_texto()">Clique aqui</button>
+        <p>Também pode clicar aqui</p>
+    </div>
+
+    <script>
+        let cond = true
+        let cond1 = true
+
+        document.querySelector('p').onclick = function(){
+            if(cond1){
+                cond1 = false
+                document.querySelector('h1').textContent = "texto alterado no evento onclick no paragrafo"
+            }else{
+                cond1 = true
+                document.querySelector('h1').textContent = "Também pode clicar aqui"
+            }
+        }
+
+
+        function alterar_texto(){
+            
+            if(cond){
+                cond = false
+                document.querySelector('h1').textContent = "texto alterado no evento onclick"
+            }else{
+                cond = true
+                document.querySelector('h1').textContent = "Texto original do HTMl"
+            }
+        }
+    </script>
+</body>
+</html>

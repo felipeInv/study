@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>022</title>
+</head>
+<body>
+    <h1>Titulo 1</h1>
+    <button>Clique aqui</button>
+    <script>
+        let botao = document.querySelector('button');
+        let titulo = document.querySelector('h1');
+        botao.onclick = () => {
+            if(titulo.style.backgroundColor == ''){
+                document.querySelector('h1').style.backgroundColor = 'yellow';
+                botao.textContent = 'Deixar transparente';
+            }else{
+                document.querySelector('h1').style.backgroundColor = '';
+                botao.textContent = 'Deixar amarelo';
+            }
+        }
+    </script>
+</body>
+</html>

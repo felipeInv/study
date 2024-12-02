@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>012</title>
+    <style>
+        .container{
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        p{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Dentro da div
+    </div>
+
+    <script>
+        let divisao = document.querySelector('.container');
+
+        //insertAdjacentText (adiciona texto)
+            //beforebegin = antes e fora
+            //afterbegin = antes e dentro
+            //beforeend = depois e dentro
+            //afterend = depois e fora
+        divisao.insertAdjacentText('beforebegin','AAA');
+        divisao.insertAdjacentText('afterbegin', 'BBB');
+        divisao.insertAdjacentText('beforeend','CCC');
+        divisao.insertAdjacentText('afterend', 'DDD');
+
+        //insertAdjacentHTML (adiciona texto e tags)
+        divisao.insertAdjacentHTML('beforebegin','<p>AAAA</p>');
+        divisao.insertAdjacentHTML('afterbegin', '<p>BBBB</p>');
+        divisao.insertAdjacentHTML('beforeend', '<p>CCCC</p>');
+        divisao.insertAdjacentHTML('afterend', '<p>DDDD</p>');
+
+        //insertAdjacentElement (adiciona elementos)
+        let paragrafo = document.createElement('p');
+        paragrafo.innerText = "Texto";
+        divisao.insertAdjacentElement('beforebegin',paragrafo);
+        divisao.insertAdjacentElement('afterbegin',paragrafo);
+        divisao.insertAdjacentElement('beforeend',paragrafo);
+        divisao.insertAdjacentElement('afterend',paragrafo);
+    </script>
+</body>
+</html>

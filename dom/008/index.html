@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 002</title>
+</head>
+<body>
+    <h3 id="titulo">Este texto tem importância</h3>
+    <div class="noticia">
+        <h1>titulo da notícia <strong>um</strong></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam laudantium veritatis tempore ipsa ipsam saepe quos quod, sit blanditiis? Illo inventore perferendis distinctio minima sint odio atque architecto omnis.</p>
+    </div>
+    <div>
+        <h1>titulo da noticia2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur libero explicabo quia facilis porro corporis distinctio tenetur dolorum omnis ab veritatis, officia, repellat exercitationem vitae maiores sed voluptates deserunt dicta?</p>
+    </div>
+    <img src="imt/img1.jpg" alt="Imagem de notícias" id="noticias" onmouseenter="executar()" onmouseout="desexecutar()" onclick="executarclick()">
+
+    <script>
+        var cond = false
+        function executar(){
+            let e = document.querySelector('#titulo');
+            e.innerText = 'Novo titulo';
+            e.style.color = 'blue';
+        }
+        function executarclick(){
+            let e = document.querySelector('#titulo');
+            e.innerText = 'Novo titulo';
+            e.style.color = 'blue';
+            cond = true;
+
+        }
+        function desexecutar(){
+            if (cond!=true){
+                let a = window.document.querySelector('#titulo');
+                a.style.color = 'black';
+                a.innerText = 'Este texto tem importância';
+            }
+        }
+        
+    </script>
+</body>
+</html>

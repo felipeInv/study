@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        .focus{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="#" method="post" name="frm_login">
+        
+        <div>
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" id="usuario" >
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="text" name="senha" id="senha" autofocus>
+        </div>
+
+        <div>
+            <input type="submit" value="Entrar">
+        </div>
+
+    </form>
+    
+    <script>
+        
+        let usuario = document.querySelector('[name="usuario"]');
+        let senha = document.querySelector('[name="senha"]');
+
+        //focus
+        usuario.addEventListener('focus', (evento) =>{
+            evento.target.classList.add('focus')
+        })
+        senha.addEventListener('focus', (evento) =>{
+            evento.target.classList.add('focus')
+        })
+
+        //blur
+        usuario.addEventListener('blur', (evento) =>{
+            evento.target.classList.remove('focus')
+            if(usuario.value == 'felipe'){
+                console.log('Olá felipe!')
+            }
+        })
+        senha.addEventListener('blur', (evento) =>{
+            evento.target.classList.remove('focus')
+        })
+
+    </script>
+</body>
+</html>

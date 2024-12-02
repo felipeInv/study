@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003</title>
+    
+</head>
+<body>
+    <h1>Conteúdo HTML</h1>
+    <div id="teste">
+        <h1>Titulo 1</h1>
+        <h1>Titulo 2</h1>
+    </div>
+    <script>
+        console.log(window.document.getElementById('teste').childNodes)
+        window.document.getElementById('teste').childNodes[3].innerText = 'oi oi';
+
+        /*console.log(document.body.childNodes);
+        window.document.body.childNodes[1].innerText= 'novo texto';
+        window.document.body.childNodes[1].textContent = 'novo texto2f';
+
+        console.log(window.document.documentElement.lang);*/
+    </script>
+</body>
+</html>

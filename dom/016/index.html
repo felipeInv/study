@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>016</title>
+    <style>
+        h1{
+            color: red;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p style="color: blue; margin-top: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat facilis quis id voluptas?</p>
+
+    <script>
+        let paragrafo = document.querySelector('p');
+        console.log(paragrafo.style.color);
+        console.log(paragrafo.style.marginTop);
+
+
+        let propriedades = getComputedStyle(document.querySelector('h1'));
+        console.log(propriedades.color);
+        console.log(propriedades.marginTop);
+        console.log(propriedades.border);
+
+        console.log(propriedades.borderWidth);
+        console.log(propriedades.borderColor);
+        console.log(propriedades.borderStyle);
+    </script>
+</body>
+</html>

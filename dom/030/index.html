@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>030</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="tarefa">Tarefa</label>
+            <input type="text" name="tarefa" id="tarefa">
+        </div>
+
+        <div>
+            <label for="tempo">Quanto tempo</label>
+            <select name="tempo" id="tempo">
+                <option value="1">1 dia</option>
+                <option value="2">2 dias</option>
+                <option value="3">3 dias</option>
+                <option value="5">5 dias</option>
+            </select>
+        </div>
+    </form>
+
+    <script>
+        let tarefa = document.querySelector('[name="tarefa"]');
+        let tempo = document.querySelector('[name="tempo"]');
+
+        //change
+
+        // tarefa.addEventListener('change', () =>{
+        //     console.log('alterado')
+        // })
+
+        // tempo.addEventListener('change', () =>{
+        //     console.log('alterado select')
+        // })
+
+
+        //input
+
+        // tarefa.addEventListener('input', () =>{
+        //     console.log('alterado introduzido')
+        // })
+
+        //cut
+
+        // tarefa.addEventListener('cut', () =>{
+        //     console.log('cortado')
+        // })
+
+
+         //copy
+
+        // tarefa.addEventListener('copy', () =>{
+        //     console.log('copiado')
+        // })
+
+
+         //paste
+
+        tarefa.addEventListener('paste', () =>{
+            console.log('colado')
+        })
+    </script>
+</body>
+</html>

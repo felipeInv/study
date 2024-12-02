@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#" method="post" name="frm_login">
+        
+        <div>
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" id="usuario" value="felipe">
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="text" name="senha" id="senha" value="123456">
+        </div>
+
+        <div>
+            <input type="submit" value="Entrar">
+        </div>
+
+    </form>
+    
+    <script>
+        console.log(document.forms.frm_login.senha.value)
+    </script>
+</body>
+</html>

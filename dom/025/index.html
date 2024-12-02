@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 30px;
+            background-color: yellow
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Este é o meu elemento
+    </div>
+
+    <script>
+        document.querySelector('div').addEventListener('mousemove', () => {
+            // console.log(event.pageX + ';' + event.pageY)
+
+            if(event.pageX <= 100){
+                event.target.style.backgroundColor = 'red';
+            }
+            else if(event.pageX >= 600){
+                event.target.style.backgroundColor = 'green';
+            }else{
+                event.target.style.backgroundColor = 'yellow';
+            }
+        })
+    </script>
+</body>
+</html>

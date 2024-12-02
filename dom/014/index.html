@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>014</title>
+    <style>
+        .p1{
+            background-color: darkgreen;
+        }
+        .p2{
+            background-color: darkred;
+            color: white;
+        }
+        .espaco{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <script>
+        let paragrafo = document.querySelector('p');
+
+        //classname é uma propriedade que ler e atribui uma classe ao elemento
+        paragrafo.className = 'p2 espaco';
+
+        //adiciona
+        paragrafo.classList.add('p2');
+        paragrafo.classList.add('espaco');
+
+        //remove
+        paragrafo.classList.remove('espaco');
+
+        //se tiver, remove, senão acrescenta
+        paragrafo.classList.toggle('espaco');
+
+        //ver se tem
+        if(paragrafo.classList.contains('espaco')){
+            console.log('sim');
+        }else{
+            console.log('não tem');
+        }
+    </script>
+</body>
+</html>
